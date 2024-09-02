@@ -4,33 +4,70 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  align-items: left;
+  justify-content: flex-start; /* Align items to the start (left side) */
+  align-items: center; /* Vertically center the items */
   background-color: black;
   padding: 10px 20px;
   color: white;
 }
 
-
-
 .navbar-menu {
   list-style: none;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin-left: 20px; /* Adjust the space between the <h1> and the <li> items */
   padding: 0;
 }
 
 .navbar-item {
-  margin-left: 20px;
+  margin-left: 50px; /* Adjust the spacing between each item */
+  margin-right: 20px;
 }
 
-.navbar-item a {
-  color: white;
+.admin-login-item {
+  position: absolute;
+  right: 10px;
+}
+
+.header-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+}
+
+.info-erconsult {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+.info-erconsult p {
+  margin-bottom: 20px;
+}
+
+.navbar-header-link {
   text-decoration: none;
+  color: white;
+}
+
+.navbar-item a,
+.admin-login-item a {
+  color: white;
+  text-decoration: none; /* Remove underline and decoration */
   font-size: 16px;
 }
 
-.navbar-item a:hover {
-  text-decoration: underline;
+.navbar-item a:hover,
+.admin-login-item a:hover {
+  text-decoration: underline; /* Underline on hover */
 }
